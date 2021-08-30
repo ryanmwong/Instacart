@@ -1,0 +1,310 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+                                    
+                                //*SASS shortcuts*
+$gray: rgb(241, 241, 241);
+$dark-gray: rgb(44, 44, 44);
+$green: rgb(71, 179, 0);
+$text-gray: rgb(119, 119, 119);
+
+    //'display:flex' and 'align-items:center'
+%y-centered {
+    display:flex;
+    align-items: center;
+}
+
+
+                                //website container
+.website-container {
+    max-width: 1460px;
+    margin: 0 auto;
+    font-family: Source Sans Pro;
+
+}
+
+                                //nav container
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 12px;
+    border-bottom: 1px solid $gray;
+}
+
+.nav-section {
+    @extend %y-centered;
+}
+
+    //nav1
+.nav1 {
+    width: 20%;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.nav-allStores {
+    @extend %y-centered;
+    font-size: 12px;
+    color: gray;
+    position: relative;
+    right: 5px;
+}
+
+    //nav2
+.nav2 {
+    width: 42%;
+    display:flex;
+    justify-content: center;
+}
+
+.nav-searchbar-container {
+    background-color: $gray;
+    @extend %y-centered;
+    width: 95%;
+    border-radius: 10px;    
+}
+
+.nav-searchbar {
+    background-color: transparent;
+    border: transparent;
+    width: 96%;
+    padding: 20px;
+}
+
+::placeholder {
+    color:black;
+}
+
+.nav-searchButton {
+    padding: 0px 15px 0px 15px;
+}
+
+    //nav3
+.nav3 {
+    width: 38%;
+    display:flex;
+    justify-content: space-around;
+}
+
+.nav-delivery-container {
+    @extend %y-centered;
+    justify-content: space-between;
+}
+
+.nav-deliveryTime-container {
+    @extend %y-centered;
+}
+
+.nav-cart-container {
+    @extend %y-centered;
+    background-color: $gray;
+    padding: 12px 20px 12px 20px;
+    border-radius: 20px;
+}
+
+.nav-delivery-container, .nav-deliveryTime-container, .nav-cart-container {
+    margin-right: 14px;
+}
+
+    //icons
+.nav-carLogo, .nav-deliveryIcon, .nav-cart {
+    padding-right: 5px;
+}
+
+.nav-menuLogo, .nav-searchButton, .nav-carLogo, .nav-deliveryIcon, .nav-cart {
+    font-size: 25px;
+    color: $dark-gray;
+}
+
+
+                            //main container (sidebar and food selection)
+.main-container {
+    display:flex;
+}
+
+//sidebar container
+.sidebar-container {
+    width: 18%;
+}
+
+    //sidebar costco info
+.sidebar-costco-container {
+    text-align:center;
+    padding-top: 20px;
+    border-bottom: 1px solid $gray;
+}
+
+.costco-logo {
+    border: 1px solid $gray;
+    border-radius: 50%;
+}
+
+.costco-logo-item {
+    display:flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 4px;
+}
+
+.costco-logo-item-small {
+    font-size: 12px;
+    color: gray;
+    @extend %y-centered;
+}
+
+.sidebar-checkmarkIcon {
+    margin-right: 4px;
+    font-size: 16px;
+}
+
+.costco-logo-item-blue-small {
+    color: rgb(65, 132, 255);
+}
+
+    //sidebar items
+.sidebar-shopBtn-container {
+    padding: 12px;
+    border-bottom: 1px solid $gray;
+}
+
+.sidebar-shopBtn-innerContainer {
+    background-color: $dark-gray;
+    padding: 10px;
+    @extend %y-centered;
+    color: white;
+    border-radius: 10px;
+}
+
+.sidebar-homeIcon {
+    padding-right: 6px;
+}
+
+.sidebar-items {
+    padding-left: 15px;
+}
+
+.sidebar-item {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar-item:hover {
+    background-color: $gray;
+    border-radius: 10px;
+}
+
+                                //food selection container
+.selection-container {
+    width: 82%;
+}
+
+    //row1 
+.selection-row {
+    display:flex;
+    flex-direction: column;
+}
+
+    //row1 header
+.selection-row-header-container {
+    display:flex;
+    padding: 16px 22px 6px 22px;
+    color: $dark-gray;
+}
+
+.selection-row-header-title {
+    width: 50%;
+}
+
+.selection-row-viewMore-container {
+    width: 50%;
+    @extend %y-centered;
+    justify-content: flex-end;
+    color: $green;
+}
+
+    //row1 selection
+.selection-row-foods-container {
+    display:flex;
+}
+
+
+            //row1 first page
+.selection-row-foods-firstPage {
+    display:flex;
+    width: 100%;
+    padding: 18px;
+    position: relative;
+}
+
+.selection-row-item {
+    position: relative;
+    width: 200px;
+    margin: 5px;
+}
+
+.selection-row-img-container {
+    //text-align: center;
+}
+
+.selection-row-img {
+    width: 90%;
+}
+
+.addToCart {
+    position: absolute;
+    right: 18px;
+    top: 10px;
+    font-size: 30px;
+    padding: 5px;
+    background-color:white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px rgb(209, 209, 209);
+    color: $dark-gray;
+}
+
+.selection-row-weight {
+    font-size: 13px;
+}
+
+.selection-row-arrowFirst {
+    position: absolute;
+    top: 150px;
+    right: 18px;
+    font-size: 25px;
+    padding: 7px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0px 0px 8px rgb(209, 209, 209);
+    color: $dark-gray;
+}
+
+.selection-row-foodName {
+    line-height: 20px;
+    margin-bottom: 2px;
+    width: 90%;
+}
+
+.selection-row-foodName, .selection-row-weight {
+    color: $text-gray;
+}
+
+            //row1 second page
+.selection-row-foods-secondPage {
+    display:flex;
+    width: 100%;
+    padding: 15px;
+}
+
+.selection-row-arrowSecond {
+
+}
+
+
+
+
+
+
+     
+
