@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instacart</title>
+    <link href = 'style.css' rel='stylesheet'>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--website container-->
+    <div class='website-container'>
+
+        <!--nav container-->
+        <nav class='nav-container'>
+
+            <!--nav1-->
+            <div class='nav-section nav1'>
+                <ion-icon name="menu" class='nav-menuLogo'></ion-icon>
+                <img src='instacart logo.png' class='instacart-logo'>
+                <p class='nav-allStores'><ion-icon name="chevron-back-sharp"  class='nav-allStores'></ion-icon>All stores</p>
+            </div>
+
+            <!--nav2-->
+            <div class='nav-section nav2'>
+                <div class='nav-searchbar-container'>
+                    <input type='text' class='nav-searchbar' placeholder='Search Costco...'>
+                    <ion-icon name="search-sharp" class='nav-searchButton'></ion-icon>
+                </div>
+            </div>
+
+            <!--nav3-->
+            <div class='nav-section nav3'>
+                <div class='nav-delivery-container'>
+                    <ion-icon name="car-sharp" class='nav-carLogo'></ion-icon>
+                    <p class='nav-address'>Delivery to 742 Evergreen Terrace</p>
+                </div>
+                <div class='nav-deliveryTime-container'>
+                    <ion-icon name="time-sharp" class='nav-deliveryIcon'></ion-icon>
+                    <p class='nav-deliveryTime'>Today</p>
+                </div>
+                <div class='nav-cart-container'>
+                    <ion-icon name="cart-sharp" class='nav-cart'></ion-icon>
+                    <p class='nav-cart-count'>0</p>
+                </div>
+            </div>
+
+        </nav>
+
+        <!--main container (sidebar and food selection)-->
+        <main class='main-container'>
+
+            <!--sidebar container-->
+            <aside class='sidebar-container'>
+
+                <!--sidebar costco info-->
+                <div class='sidebar-costco-container'>
+                    <img src='costco logo.png' class='costco-logo'>
+                    <ul class='costco-logo-items'>
+                        <li class='costco-logo-item'>Costco</li>
+                        <li class='costco-logo-item costco-logo-item-small'>View pricing policy<ion-icon name="chevron-forward-sharp"></ion-icon></li>
+                        <div class='costco-logo-item costco-logo-item-small costco-logo-item-blue-small'>
+                            <ion-icon name="checkmark-circle-sharp" class='sidebar-checkmarkIcon'></ion-icon>
+                            <li>100% satisfaction guarantee</li>
+                            <ion-icon name="chevron-forward-sharp"></ion-icon>
+                        </div>
+                        <li class='costco-logo-item costco-logo-item-small'>Save with Costco Membership<ion-icon name="chevron-forward-sharp"></ion-icon></li>
+                    </ul>
+                </div>
+
+                <!--sidebar items-->
+                <div class='sidebar-items-container'>
+                    <div class='sidebar-shopBtn-container'>
+                        <div class='sidebar-shopBtn-innerContainer'>
+                            <ion-icon name="home-sharp" class='sidebar-homeIcon'></ion-icon>
+                            <p class='sidebar-shopBtn'>Shop</p>
+                        </div>
+                    </div>
+                    <ul class='sidebar-items'>
+                        <li class='sidebar-item'>Produce</li>
+                        <li class='sidebar-item'>Dairy & Eggs</li>
+                        <li class='sidebar-item'>Snacks, Candy & Nuts</li>
+                        <li class='sidebar-item'>Deli</li>
+                        <li class='sidebar-item'>Frozen Foods</li>
+                        <li class='sidebar-item'>Beverages</li>
+                        <li class='sidebar-item'>Pantry & Dry Goods</li>
+                        <li class='sidebar-item'>Bakery & Desserts</li>
+                        <li class='sidebar-item'>Paper Products & Food Storage</li>
+                        <li class='sidebar-item'>Personal Care</li>
+                        <li class='sidebar-item'>Meat & Seafood</li>
+                        <li class='sidebar-item'>Cleaning & Laundry Products</li>
+                        <li class='sidebar-item'>Canned Goods</li>
+                        <li class='sidebar-item'>Breakfast</li>
+                        <li class='sidebar-item'>Alcohol</li>
+                        <li class='sidebar-item'>Kirkland Signature</li>
+                        <li class='sidebar-item'>Coffee & Sweeteners</li>
+                        <li class='sidebar-item'>Pets</li>
+                        <li class='sidebar-item'>Babies</li>
+                        <li class='sidebar-item'>Office Products</li>
+                        <li class='sidebar-item'>Home & Kitchen</li>
+                        <li class='sidebar-item'>Auto Accessories</li>
+                        <li class='sidebar-item'>Electronics</li>
+                        <li class='sidebar-item'>Books</li>
+                        <li class='sidebar-item'>Popular</li>
+                        <li class='sidebar-item'>Costco Recipe of the Month</li>
+                        <li class='sidebar-item'>Back to School</li>
+                        <li class='sidebar-item'>Floral</li>
+                        <li class='sidebar-item'>Sales</li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!--food selection container-->
+            <section class='selection-container'>
+
+                <!--row1-->
+                <div class='selection-row'>
+
+                    <!--row1 header-->
+                    <div class='selection-row-header-container'>
+                        <h1 class='selection-row-header-title'>Fresh Vegetables</h1>
+                        <div class='selection-row-viewMore-container'>
+                            <p class='selection-row-viewMore-text'>View more</p>
+                            <ion-icon name="chevron-forward-sharp" class='selection-row-viewMore-arrow'></ion-icon>
+                        </div>
+                    </div>
+
+                    <!--row1 selection-->
+                    <div class='selection-row-foods-container'>
+
+                        <!--row1 first page-->
+                        <div class='selection-row-foods-firstPage'>
+                            <div class='selection-row-item'>
+                                <div class='selection-row-img-container'>
+                                    <img src='Instacart Foods/Fresh Vegetables/bell peppers.jpeg' class='selection-row-img'>
+                                </div>
+                                <ion-icon name="add" class='addToCart'></ion-icon>
+                                <h4 class='selection-row-title'>$9.94</h4>
+                                <p class='selection-row-foodName'>Mixed Bell Peppers, Greenhouse Grown, 6 ct</p>
+                                <p class='selection-row-weight'>6 Count Bag</p>
+                            </div>
+                            <div class='selection-row-item'>
+                                <div class='selection-row-img-container'>
+                                    <img src='Instacart Foods/Fresh Vegetables/english cucumbers.jpeg' class='selection-row-img'>
+                                </div>
+                                <ion-icon name="add" class='addToCart'></ion-icon>
+                                <h4 class='selection-row-title'>$7.45</h4>
+                                <p class='selection-row-foodName'>Organic English Cucumbers, Greenhouse Grown, 3 ct</p>
+                                <p class='selection-row-weight'>3 ct</p>
+                            </div>
+                            <div class='selection-row-item'>
+                                <div class='selection-row-img-container'>
+                                    <img src='Instacart Foods/Fresh Vegetables/tomatoes on the vine.jpeg' class='selection-row-img'>
+                                </div>
+                                <ion-icon name="add" class='addToCart'></ion-icon>
+                                <h4 class='selection-row-title'>$8.70</h4>
+                                <p class='selection-row-foodName'>Tomatoes on the Vine, Greenhouse Grown, 4 lbs</p>
+                                <p class='selection-row-weight'>4 lbs</p>
+                            </div>
+                            <div class='selection-row-item'>
+                                <div class='selection-row-img-container'>
+                                    <img src='Instacart Foods/Fresh Vegetables/baby spinach.jpeg' class='selection-row-img'>
+                                </div>
+                                <ion-icon name="add" class='addToCart'></ion-icon>
+                                <h4 class='selection-row-title'>$6.83</h4>
+                                <p class='selection-row-foodName'>Organic Baby Spinach, 1 lb</p>
+                                <p class='selection-row-weight'>5 oz container
+                                </p>
+                            </div>
+                            <div class='selection-row-item'>
+                                <div class='selection-row-img-container'>
+                                    <img src='Instacart Foods/Fresh Vegetables/cocktail cucumber.jpeg' class='selection-row-img'>
+                                </div>
+                                <ion-icon name="add" class='addToCart'></ion-icon>
+                                <h4 class='selection-row-title'>$7.45</h4>
+                                <p class='selection-row-foodName'>Cocktail Cucumber, Greenhouse Grown, 1.5 lbs</p>
+                                <p class='selection-row-weight'>1.5 lb Bag</p>
+                            </div>
+                            <div class='selection-row-item'>
+                                <div class='selection-row-img-container'>
+                                    <img src='Instacart Foods/Fresh Vegetables/grape tomatoes.jpeg' class='selection-row-img'>
+                                </div>                            
+                                <ion-icon name="add" class='addToCart'></ion-icon>
+                                <h4 class='selection-row-title'>$7.45</h4>
+                                <p class='selection-row-foodName'>Grape Tomatoes, Greenhouse Grown, 2 lbs</p>
+                                <p class='selection-row-weight'>2 lbs</p>
+                            </div>
+                            <div>
+                                <ion-icon name="chevron-forward" class='selection-row-arrowFirst'></ion-icon>
+                            </div>
+                        </div>
+
+                        <!--row1 second page-->
+                        <div class='selection-row-foods-secondPage'>
+                            <div class='selection-row-item'>
+                                <div class='selection-row-img-container'>
+                                    <img src='Instacart Foods/Fresh Vegetables/kale gourmet salad.jpeg' class='selection-row-img'>
+                                </div>
+                                <ion-icon name="add" class='addToCart'></ion-icon>
+                                <h4 class='selection-row-title'>$7.45</h4>
+                                <p class='selection-row-foodName'>Sweet Kale Gourmet Salad, 28 oz</p>
+                                <p class='selection-row-weight'>28 oz bag</p>
+                            </div>
+                            <div class='selection-row-item'>
+                                <div class='selection-row-img-container'>
+                                    <img src='Instacart Foods/Fresh Vegetables/crimini mushroom.jpeg' class='selection-row-img'>
+                                </div>
+                                <ion-icon name="add" class='addToCart'></ion-icon>
+                                <h4 class='selection-row-title'>$7.45</h4>
+                                <p class='selection-row-foodName'>Organic Crimini Mushrooms, 24 oz</p>
+                                <p class='selection-row-weight'>4 oz container</p>
+                            </div>
+                            <div class='selection-row-item'>
+                                <div class='selection-row-img-container'>
+                                    <img src='Instacart Foods/Fresh Vegetables/celery sticks.jpeg' class='selection-row-img'>
+                                </div>
+                                <ion-icon name="add" class='addToCart'></ion-icon>
+                                <h4 class='selection-row-title'>$6.83</h4>
+                                <p class='selection-row-foodName'>Organic Celery Sticks, 2.5 lbs</p>
+                                <p class='selection-row-weight'>2.5 lb bag</p>
+                            </div>
+                            <div class='selection-row-item'>
+                                <div class='selection-row-img-container'>
+                                    <img src='Instacart Foods/Fresh Vegetables/peeled carrots.jpeg' class='selection-row-img'>
+                                </div>
+                                <ion-icon name="add" class='addToCart'></ion-icon>
+                                <h4 class='selection-row-title'>$8.70</h4>
+                                <p class='selection-row-foodName'>Organic Peeled Carrots, 2 x 2 lbs</p>
+                                <p class='selection-row-weight'>2 lb bag</p>
+                            </div>
+                            <div class='selection-row-item'>
+                                <div class='selection-row-img-container'>
+                                    <img src='Instacart Foods/Fresh Vegetables/tomatoe medley.jpeg' class='selection-row-img'>
+                                </div>
+                                <ion-icon name="add" class='addToCart'></ion-icon>
+                                <h4 class='selection-row-title'>$8.70</h4>
+                                <p class='selection-row-foodName'>Gourmet Tomato Medley Greenhouse Grown, 2 lbs</p>
+                                <p class='selection-row-weight'>2 lb bag</p>
+                            </div>
+                            <div class='selection-row-item'>
+                                <div class='selection-row-img-container'>
+                                    <img src='Instacart Foods/Fresh Vegetables/mediterranean salad.jpeg' class='selection-row-img'>
+                                </div>
+                                <ion-icon name="add" class='addToCart'></ion-icon>
+                                <h4 class='selection-row-title'>$8.70</h4>
+                                <p class='selection-row-foodName'>Organic Mediterranean Salad Kit, 24.03 oz</p>
+                                <p class='selection-row-weight'>24 oz bag</p>
+                            </div>
+                            <div>
+                                <ion-icon name="chevron-back" class='selection-row-arrowSecond'></ion-icon>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!--row2-->
+                <div class='selection-row'>
+
+                    <!--row2 header-->
+                    <div class='selection-row-header-container'>
+                        <h1 class='selection-row-header-title'>Fresh Fruit</h1>
+                        <div class='selection-row-viewMore-container'>
+                            <p class='selection-row-viewMore-text'>View more</p>
+                            <ion-icon name="chevron-forward-sharp" class='selection-row-viewMore-arrow'></ion-icon>
+                        </div>
+                    </div>
+
+                    <!--row2 selection-->
+                    <div class='selection-row-foods-container'>
+
+                        <!--row2 first page-->
+                        <div class='selection-row-foods-firstPage'>
+                            <div class='selection-row-item'>
+                                <div class='selection-row-img-container'>
+                                    <img src='Instacart Foods/Fresh Fruit/bananas.jpeg' class='selection-row-img'>
+                                </div>
+                                <ion-icon name="add" class='addToCart'></ion-icon>
+                                <h4 class='selection-row-title'>$2.10</h4>
+                                <p class='selection-row-foodName'>Bananas, 3 lbs</p>
+                                <p class='selection-row-weight'>3 lb</p>
+                            </div>
+                            <div class='selection-row-item'>
+                                <div class='selection-row-img-container'>
+                                    <img src='Instacart Foods/Fresh Fruit/avocados.jpeg' class='selection-row-img'>
+                                </div>
+                                <ion-icon name="add" class='addToCart'></ion-icon>
+                                <h4 class='selection-row-title'>$8.07</h4>
+                                <p class='selection-row-foodName'>Avocado Hass Variety, 6 ct</p>
+                                <p class='selection-row-weight'>6 count bag</p>
+                            </div>
+                            <div class='selection-row-item'>
+                                <div class='selection-row-img-container'>
+                                    <img src='Instacart Foods/Fresh Fruit/organic bananas.jpeg' class='selection-row-img'>
+                                </div>
+                                <ion-icon name="add" class='addToCart'></ion-icon>
+                                <h4 class='selection-row-title'>$2.48</h4>
+                                <p class='selection-row-foodName'>Organic Bananas, 3 lbs</p>
+                                <p class='selection-row-weight'>3 lb Bunch</p>
+                            </div>
+                            <div class='selection-row-item'>
+                                <div class='selection-row-img-container'>
+                                    <img src='Instacart Foods/Fresh Fruit/organic blueberries.jpeg' class='selection-row-img'>
+                                </div>
+                                <ion-icon name="add" class='addToCart'></ion-icon>
+                                <h4 class='selection-row-title'>$8.07</h4>
+                                <p class='selection-row-foodName'>Organic Blueberries, 18 oz</p>
+                                <p class='selection-row-weight'>18 oz container
+                                </p>
+                            </div>
+                            <div class='selection-row-item'>
+                                <div class='selection-row-img-container'>
+                                    <img src='Instacart Foods/Fresh Fruit/blueberries.jpeg' class='selection-row-img'>
+                                </div> 
+                                <ion-icon name="add" class='addToCart'></ion-icon>
+                                <h4 class='selection-row-title'>$5.59</h4>
+                                <p class='selection-row-foodName'>Blueberries, 18 oz</p>
+                                <p class='selection-row-weight'>18 oz Container</p>
+                            </div>
+                            <div class='selection-row-item'>
+                                <div class='selection-row-img-container'>
+                                    <img src='Instacart Foods/Fresh Fruit/clementines.jpeg' class='selection-row-img'>
+                                </div>                          
+                                <ion-icon name="add" class='addToCart'></ion-icon>
+                                <h4 class='selection-row-title'>$9.94</h4>
+                                <p class='selection-row-foodName'>Clementines, 5 lbs</p>
+                                <p class='selection-row-weight'>5 lbs</p>
+                            </div>
+                            <div>
+                                <ion-icon name="chevron-forward" class='selection-row-arrowFirst'></ion-icon>
+                            </div>
+                        </div>
+
+                        <!--row2 second page-->
+                        <div class='selection-row-foods-secondPage'>
+                            <div class='selection-row-item'>
+                                <div class='selection-row-img-container'>
+                                    <img src='Instacart Foods/Fresh Fruit/lemons.jpeg' class='selection-row-img'>
+                                </div>
+                                <ion-icon name="add" class='addToCart'></ion-icon>
+                                <h4 class='selection-row-title'>$11.18</h4>
+                                <p class='selection-row-foodName'>Simple Mills Almond Flour Crackers, 2 x 8.5 oz</p>
+                                <p class='selection-row-weight'>2 x 8.5 oz</p>
+                            </div>
+                            <div class='selection-row-item'>
+                                <div class='selection-row-img-container'>
+                                    <img src='Instacart Foods/Fresh Fruit/golden pineapple.jpeg' class='selection-row-img'>
+                                </div>
+                                <ion-icon name="add" class='addToCart'></ion-icon>
+                                <h4 class='selection-row-title'>$7.45</h4>
+                                <p class='selection-row-foodName'>Organic Crimini Mushrooms, 24 oz</p>
+                                <p class='selection-row-weight'>4 oz container</p>
+                            </div>
+                            <div class='selection-row-item'>
+                                <div class='selection-row-img-container'>
+                                    <img src='Instacart Foods/Fresh Fruit/red seedless grapes.jpeg' class='selection-row-img'>
+                                </div>
+                                <ion-icon name="add" class='addToCart'></ion-icon>
+                                <h4 class='selection-row-title'>$6.83</h4>
+                                <p class='selection-row-foodName'>Organic Celery Sticks, 2.5 lbs</p>
+                                <p class='selection-row-weight'>2.5 lb bag</p>
+                            </div>
+                            <div class='selection-row-item'>
+                                <div class='selection-row-img-container'>
+                                    <img src='Instacart Foods/Fresh Fruit/seedless watermelon.jpeg' class='selection-row-img'>
+                                </div>
+                                <ion-icon name="add" class='addToCart'></ion-icon>
+                                <h4 class='selection-row-title'>$8.70</h4>
+                                <p class='selection-row-foodName'>Organic Peeled Carrots, 2 x 2 lbs</p>
+                                <p class='selection-row-weight'>2 lb bag</p>
+                            </div>
+                            <div class='selection-row-item'>
+                                <div class='selection-row-img-container'>
+                                    <img src='Instacart Foods/Fresh Fruit/ks organic blueberries.jpeg' class='selection-row-img'>
+                                </div>
+                                <ion-icon name="add" class='addToCart'></ion-icon>
+                                <h4 class='selection-row-title'>$8.70</h4>
+                                <p class='selection-row-foodName'>Gourmet Tomato Medley Greenhouse Grown, 2 lbs</p>
+                                <p class='selection-row-weight'>2 lb bag</p>
+                            </div>
+                            <div class='selection-row-item'>
+                                <div class='selection-row-img-container'>
+                                    <img src='Instacart Foods/Fresh Fruit/blackberries.jpeg' class='selection-row-img'>
+                                </div>
+                                <ion-icon name="add" class='addToCart'></ion-icon>
+                                <h4 class='selection-row-title'>$8.70</h4>
+                                <p class='selection-row-foodName'>Organic Mediterranean Salad Kit, 24.03 oz</p>
+                                <p class='selection-row-weight'>24 oz bag</p>
+                            </div>
+                            <div>
+                                <ion-icon name="chevron-back" class='selection-row-arrowSecond'></ion-icon>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!--row3-->
+                <div class='selection-row'>
+
+                    <!--row3 header-->
+                    <div class='selection-row-header-container'>
+                        <h1 class='selection-row-header-title'>Snacks</h1>
+                        <div class='selection-row-viewMore-container'>
+                            <p class='selection-row-viewMore-text'>View more</p>
+                            <ion-icon name="chevron-forward-sharp" class='selection-row-viewMore-arrow'></ion-icon>
+                        </div>
+                    </div>
+
+                    <!--row3 selection-->
+                    <div class='selection-row-foods-container'>
+
+                        <!--row1 first page-->
+                        <div class='selection-row-foods-firstPage'>
+                            <div class='selection-row-item'>
+                                <div class='selection-row-img-container'>
+                                    <img src='Instacart Foods/Snacks/Country archer minis.jpeg' class='selection-row-img'>
+                                </div>
+                                <ion-icon name="add" class='addToCart'></ion-icon>
+                                <h4 class='selection-row-title'>$18.65</h4>
+                                <p class='selection-row-foodName'>Country Archer Minis, 14 oz</p>
+                                <p class='selection-row-weight'>14 oz</p>
+                            </div>
+                            <div class='selection-row-item'>
+                                <div class='selection-row-img-container'>
+                                    <img src='Instacart Foods/Snacks/KS organic white & hellow corn tortilla.jpeg' class='selection-row-img'>
+                                </div>
+                                <ion-icon name="add" class='addToCart'></ion-icon>
+                                <h4 class='selection-row-title'>$6.08</h4>
+                                <p class='selection-row-foodName'>Kirkland Signature Organic White & Yellow Corn Tortilla Chips, 40 oz</p>
+                                <p class='selection-row-weight'>40 oz</p>
+                            </div>
+                            <div class='selection-row-item'>
+                                <div class='selection-row-img-container'>
+                                    <img src='Instacart Foods/Snacks/snack factory organic pretzel crisps.jpeg' class='selection-row-img'>
+                                </div>
+                                <ion-icon name="add" class='addToCart'></ion-icon>
+                                <h4 class='selection-row-title'>$8.70</h4>
+                                <p class='selection-row-foodName'>Snack Factory Organic Pretzel Crisps, 28 oz</p>
+                                <p class='selection-row-weight'>28 oz</p>
+                            </div>
+                            <div class='selection-row-item'>
+                                <div class='selection-row-img-container'>
+                                    <img src='Instacart Foods/Snacks/skinny pop organic popcorn.jpeg' class='selection-row-img'>
+                                </div>
+                                <ion-icon name="add" class='addToCart'></ion-icon>
+                                <h4 class='selection-row-title'>$7.45</h4>
+                                <p class='selection-row-foodName'>Skinny Pop Organic Popcorn, 14 oz</p>
+                                <p class='selection-row-weight'>14 oz
+                                </p>
+                            </div>
+                            <div class='selection-row-item'>
+                                <div class='selection-row-img-container'>
+                                    <img src='Instacart Foods/Snacks/stacys organic simple naked pita chips.jpeg' class='selection-row-img'>
+                                </div>
+                                <ion-icon name="add" class='addToCart'></ion-icon>
+                                <h4 class='selection-row-title'>$8.45</h4>
+                                <p class='selection-row-foodName'>Stacy's Organic Simple Naked Pita Chips, 28 oz</p>
+                                <p class='selection-row-weight'>28 oz</p>
+                            </div>
+                            <div class='selection-row-item'>
+                                <div class='selection-row-img-container'>
+                                    <img src='Instacart Foods/Snacks/KS kettle himalayan salt potato chips.jpeg' class='selection-row-img'>
+                                </div>                            
+                                <ion-icon name="add" class='addToCart'></ion-icon>
+                                <h4 class='selection-row-title'>$5.96</h4>
+                                <p class='selection-row-foodName'>Kirkland Signature Kettle Himalayan Salt Potato Chips, 32 oz</p>
+                                <p class='selection-row-weight'>32 oz</p>
+                            </div>
+                            <div>
+                                <ion-icon name="chevron-forward" class='selection-row-arrowFirst'></ion-icon>
+                            </div>
+                        </div>
+
+                        <!--row3 second page-->
+                        <div class='selection-row-foods-secondPage'>
+                            <div class='selection-row-item'>
+                                <div class='selection-row-img-container'>
+                                    <img src='Instacart Foods/Snacks/frito lay variety pack.jpeg' class='selection-row-img'>
+                                </div>
+                                <ion-icon name="add" class='addToCart'></ion-icon>
+                                <h4 class='selection-row-title'>$18.52</h4>
+                                <p class='selection-row-foodName'>Frito Lay Variety Pack, 54 x 1 oz</p>
+                                <p class='selection-row-weight'>54 x 1 oz</p>
+                            </div>
+                            <div class='selection-row-item'>
+                                <div class='selection-row-img-container'>
+                                    <img src='Instacart Foods/Snacks/skinny pop organic popcorn.jpeg' class='selection-row-img'>
+                                </div>
+                                <ion-icon name="add" class='addToCart'></ion-icon>
+                                <h4 class='selection-row-title'>$16.16</h4>
+                                <p class='selection-row-foodName'>SkinnyPop Popcorn, 28 x .65 oz</p>
+                                <p class='selection-row-weight'>28 x 0.65 oz</p>
+                            </div>
+                            <div class='selection-row-item'>
+                                <div class='selection-row-img-container'>
+                                    <img src='Instacart Foods/Snacks/pirates booty ages white cheddar.jpeg' class='selection-row-img'>
+                                </div>
+                                <ion-icon name="add" class='addToCart'></ion-icon>
+                                <h4 class='selection-row-title'>$12.43</h4>
+                                <p class='selection-row-foodName'>Pirate's Booty Aged White Cheddar 40 / 5 oz bags</p>
+                                <p class='selection-row-weight'>40 x 5 oz</p>
+                            </div>
+                            <div class='selection-row-item'>
+                                <div class='selection-row-img-container'>
+                                    <img src='Instacart Foods/Snacks/KS tortilla strips.jpeg' class='selection-row-img'>
+                                </div>
+                                <ion-icon name="add" class='addToCart'></ion-icon>
+                                <h4 class='selection-row-title'>$4.96</h4>
+                                <p class='selection-row-foodName'>Kirkland Signature Tortilla Strips, 48 oz</p>
+                                <p class='selection-row-weight'>48 oz</p>
+                            </div>
+                            <div class='selection-row-item'>
+                                <div class='selection-row-img-container'>
+                                    <img src='Instacart Foods/Snacks/pepperidge farm goldfish cheddar cracker.jpeg' class= 'selection-row-img'>
+                                </div>
+                                <ion-icon name="add" class='addToCart'></ion-icon>
+                                <h4 class='selection-row-title'>$12.43</h4>
+                                <p class='selection-row-foodName'>Pepperidge Farm Goldfish Cheddar Cracker, 45 x 1 oz</p>
+                                <p class='selection-row-weight'>45 x 1 oz</p>
+                            </div>
+                            <div class='selection-row-item'>
+                                <div class='selection-row-img-container'>
+                                    <img src='Instacart Foods/Snacks/simple mills almond flour crackers.jpeg' class='selection-row-img'>
+                                </div>
+                                <ion-icon name="add" class='addToCart'></ion-icon>
+                                <h4 class='selection-row-title'>$11.18</h4>
+                                <p class='selection-row-foodName'>OSimple Mills Almond Flour Crackers, 2 x 8.5 oz</p>
+                                <p class='selection-row-weight'>2 x 8.5 oz</p>
+                            </div>
+                            <div>
+                                <ion-icon name="chevron-back" class='selection-row-arrowSecond'></ion-icon>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+    <script src='script.js'></script>
+</body>
+</html>
