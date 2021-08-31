@@ -200,13 +200,13 @@ $text-gray: rgb(119, 119, 119);
     width: 82%;
 }
 
-    //row1 
+    //row one 
 .selection-row {
     display:flex;
     flex-direction: column;
 }
 
-    //row1 header
+    //row one header
 .selection-row-header-container {
     display:flex;
     padding: 16px 22px 6px 22px;
@@ -224,13 +224,13 @@ $text-gray: rgb(119, 119, 119);
     color: $green;
 }
 
-    //row1 selection
+    //row one selection
 .selection-row-foods-container {
     display:flex;
 }
 
 
-            //row1 first page
+            //row one first page
 .selection-row-foods-firstPage {
     display:flex;
     width: 100%;
@@ -290,19 +290,61 @@ $text-gray: rgb(119, 119, 119);
     color: $text-gray;
 }
 
-            //row1 second page
+.addToCart:hover, .nav-cart-container:hover {
+    background-color: rgb(231, 231, 231);
+    transition: .2s;
+}
+
+.selection-row-arrowFirst:hover, .selection-row-arrowSecond:hover {
+    background-color: $green;
+    color: white;
+    transition: .2s;
+}
+
+            //row one second page
 .selection-row-foods-secondPage {
     display:flex;
     width: 100%;
     padding: 15px;
+    position: relative;
 }
 
 .selection-row-arrowSecond {
-
+    position: absolute;
+    top: 150px;
+    font-size: 25px;
+    padding: 7px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0px 0px 8px rgb(209, 209, 209);
+    color: $dark-gray;
+    z-index: 3;
 }
 
+    //first and second page switches
+.selection-row0-first {
+    display:flex;
+}
 
+.selection-row0-second {
+    display:none;
+}
 
+.selection-row1-first {
+    display:flex;
+}
+
+.selection-row1-second {
+    display:none;
+}
+
+.selection-row2-first {
+    display:flex;
+}
+
+.selection-row2-second {
+    display:none;
+}
 
 
 
