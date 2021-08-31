@@ -299,11 +299,68 @@
   color: #777777;
 }
 
+.addToCart:hover, .nav-cart-container:hover {
+  background-color: #e7e7e7;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.selection-row-arrowFirst:hover, .selection-row-arrowSecond:hover {
+  background-color: #47b300;
+  color: white;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
 .selection-row-foods-secondPage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   padding: 15px;
+  position: relative;
+}
+
+.selection-row-arrowSecond {
+  position: absolute;
+  top: 150px;
+  font-size: 25px;
+  padding: 7px;
+  border-radius: 50%;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 8px #d1d1d1;
+          box-shadow: 0px 0px 8px #d1d1d1;
+  color: #2c2c2c;
+  z-index: 3;
+}
+
+.selection-row0-first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.selection-row0-second {
+  display: none;
+}
+
+.selection-row1-first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.selection-row1-second {
+  display: none;
+}
+
+.selection-row2-first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.selection-row2-second {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
