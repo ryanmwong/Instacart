@@ -61,6 +61,7 @@ function calculateTotal() {
         total += Number(itemsPrice[i].textContent.substring(1))
     }
     totalPriceText.textContent = '$' + total.toFixed(2);
+    total = 0;
 }
 
 for (let i=0; i<addToCartButtons.length; i++) {
