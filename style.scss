@@ -86,6 +86,7 @@ $text-gray: rgb(119, 119, 119);
     width: 38%;
     display:flex;
     justify-content: space-around;
+    position: relative;
 }
 
 .nav-delivery-container {
@@ -106,6 +107,98 @@ $text-gray: rgb(119, 119, 119);
 
 .nav-delivery-container, .nav-deliveryTime-container, .nav-cart-container {
     margin-right: 14px;
+}
+
+//cart dropdown
+.cart-dropDown {
+    position: absolute;
+    top: -12px;
+    left: 154px;
+    background-color: white;
+    border:1px solid $gray;
+    width: 390px;
+    height: 695px;
+    z-index: 3;
+    display:none;
+}
+
+.cart-dropDown-header {
+    display:flex;
+    justify-content: space-between;
+}
+
+.cart-dropDown-header p {
+    padding: 6px 10px 6px 10px;
+}
+
+.cart-dropDown-empty {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.cart-dropDown-checkout {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+    background-color: $green;
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    color: white;
+}
+
+.cart-dropDown-checkout1 {
+
+}
+
+.cart-dropDown-checkout2 {
+    margin-left: 25px;
+}
+
+    //newItem DOM
+.cart-dropDown-items {
+    
+}
+
+.dropDown-title {
+
+}
+
+.dropDown-item {
+    display:flex;
+    align-items:center;
+    text-align: center;
+    background-color: orange;
+    margin: 3px;
+    padding: 4px;
+}
+
+.dropDown-info {    
+
+
+}
+
+.dropDown-title {
+    width: 40%;    
+}
+
+.dropDown-amount {
+    width: 30%;
+    text-align:center;
+}
+
+.amount-items {
+    border: 1px solid black;
+    width: 35%;
+    padding: 8px;
+    margin: 0 auto;
+    background-color:white;
+}
+
+.dropDown-price {
+    width: 30%;
 }
 
     //icons
@@ -256,12 +349,13 @@ $text-gray: rgb(119, 119, 119);
     position: absolute;
     right: 18px;
     top: 10px;
-    font-size: 30px;
-    padding: 5px;
-    background-color:white;
+    padding: 0px 10px 0px 10px;
+    font-size: 35px;
+    border: transparent;
     border-radius: 50%;
-    box-shadow: 0px 0px 8px rgb(209, 209, 209);
+    background-color: white;
     color: $dark-gray;
+    box-shadow: 0px 0px 8px rgb(209, 209, 209);
 }
 
 .selection-row-weight {
