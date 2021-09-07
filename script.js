@@ -103,7 +103,7 @@ for (let i=0; i<addToCartButtons.length; i++) {
                 <div class='dropDown-amount${i} dropDown-amount dropDown-info'>
                     <p class='amount-items'></p>
                 </div>
-                <div class='dropDown-price${i}         dropDown-price dropDown-info'>
+                <div class='dropDown-price${i} dropDown-price dropDown-info'>
 
                 </div>`;
 
