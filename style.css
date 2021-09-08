@@ -120,8 +120,8 @@
   position: absolute;
   top: -12px;
   left: 154px;
-  background-color: white;
   border: 1px solid #f1f1f1;
+  background-color: #f1f1f1;
   width: 390px;
   height: 695px;
   z-index: 3;
@@ -135,6 +135,8 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 10px;
+  background-color: white;
 }
 
 .cart-dropDown-header p {
@@ -177,30 +179,54 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background-color: orange;
-  margin: 3px;
-  padding: 4px;
+  background-color: white;
+  margin: 3px 0px 3px 0px;
+  padding: 5px;
+  color: #2c2c2c;
 }
 
 .dropDown-title {
-  width: 40%;
+  width: 60%;
+}
+
+.dropDown-setting {
+  font-size: 12px;
+  padding: 3px;
+  color: #47b300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.dropDown-pref, .dropDown-remove {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .dropDown-amount {
-  width: 30%;
+  width: 20%;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .amount-items {
-  border: 1px solid black;
-  width: 35%;
-  padding: 8px;
+  border: 1px solid #f1f1f1;
+  padding: 5px 10px 5px 10px;
   margin: 0 auto;
   background-color: white;
 }
 
 .dropDown-price {
-  width: 30%;
+  width: 20%;
 }
 
 .nav-carLogo, .nav-deliveryIcon, .nav-cart {
